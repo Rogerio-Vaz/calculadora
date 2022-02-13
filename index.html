@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Online</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <header><h1>Calculadora Online</h1></header>
+        <div class="container">
+            <div class="calculator">
+                <p class="expressao" id="parcela1">0</p>
+                <p class="expressao" id="operacao">.</p>
+                <p class="expressao" id="parcela2">0</p>
+                <p class="visor" id="visor">0</p>
+                <table>
+                    <tr>
+                        <td><button class="btn op" onclick="clear_screen()" style="width: 106px;">AC</button></td>
+                        <td><button class="btn op" onclick="back_space()">&lt;</button></td>
+                        <td><button class="btn op" onclick="operation('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="digit_insert('7')">7</button></td>
+                        <td><button class="btn" onclick="digit_insert('8')">8</button></td>
+                        <td><button class="btn" onclick="digit_insert('9')">9</button></td>
+                        <td><button class="btn op" onclick="operation('*')">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="digit_insert('4')">4</button></td>
+                        <td><button class="btn" onclick="digit_insert('5')">5</button></td>
+                        <td><button class="btn" onclick="digit_insert('6')">6</button></td>
+                        <td><button class="btn op" onclick="operation('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="digit_insert('1')">1</button></td>
+                        <td><button class="btn" onclick="digit_insert('2')">2</button></td>
+                        <td><button class="btn" onclick="digit_insert('3')">3</button></td>
+                        <td><button class="btn op" onclick="operation('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="digit_insert('0')">0</button></td>
+                        <td><button class="btn" onclick="dot_insert()">.</button></td>
+                        <td><button class="btn op" onclick="equal()" style="width: 106px;">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
+      
